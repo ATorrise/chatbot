@@ -1,0 +1,21 @@
+version: "3.1"
+
+- story: user_asks_about_zowe_cli
+  steps:
+    - intent: zowe_documentation
+    - action: action_determine_query
+    - action: action_generate_response
+    - response: utter_generate_response
+
+- story: interactive_story_1
+  steps:
+  - intent: zowe_documentation
+    entities:
+    - search_query: list data sets
+  - action: action_determine_query
+  - slot_was_set:
+    - search_query: "How can I use Zowe CLI to list data sets?\nZowe is a tool that allows you to easily create and manage your own Zowie data set. It is available for free on the ZOWIE Marketplace.\n.NET"
+  - action: action_generate_response
+  - slot_was_set:
+    - generated_response: "Intent: zowe_documentation\nUser Input: How can I use Zowe CLI to list data sets\nproduct Info: \nProduct Name: Zowe\nDescription:\nZowe is a simple, easy to use, and very easy-to-use tool for creating and managing mainframe data. ZOWE is a free, open source, distributed, non-profit, community-based, data management"
+  - action: utter_generate_response
