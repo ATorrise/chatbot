@@ -1,5 +1,8 @@
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
+## File was my space for testing the hugging face transformers. this file changed many times during testing.
+## Tests led to my choosing the hugging face SDK
+
 # Load the pre-trained model and tokenizer
 model = GPT2LMHeadModel.from_pretrained("gpt2")
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2")

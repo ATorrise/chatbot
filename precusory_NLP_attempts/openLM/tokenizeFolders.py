@@ -1,8 +1,6 @@
 import os
 import spacy
 
-## I created another file that interacted with this one but I overwrote it and don't remember what it was for lol but was a precursor to tokenizing data
-
 nlp = spacy.load("en_core_web_sm")
 
 def tokenize_text(text):
