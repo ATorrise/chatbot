@@ -4,3 +4,4 @@ transformers
 tensorflow
 bs4
 torch --index-url https://download.pytorch.org/whl/cu118 #system specific - https://pytorch.org/get-started/locally/
+pyopenssl
