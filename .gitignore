@@ -1,4 +1,5 @@
 inno/
+env/
 .vscode
 rasaProject/.rasa/cache
 rasaProject/models

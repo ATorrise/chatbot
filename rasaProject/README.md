@@ -1,14 +1,19 @@
 ## First Steps
-1. `pip install -r requirements.txt`
-2. `source inno/Scripts/activate` to startup virtual environment "inno"
+1. Create a virtual environment:
+    - `python -m venv env` <!-- if you don't have one -->
+    - `source env/bin/activate`
+2. `pip install -r requirements.txt`
 3. <b>Train model</b> off of nlu data: `rasa train nlu`
 4. <b>Run model</b>: `rasa run --model models --enable-api --endpoints endpoints.yml`
+    <!-- The above will keep a basic model running -->
 5. <b>Use model</b> :
     1. Open a new terminal and run shell:
         - `rasa run actions`: starts the actions server (REQUIRED)
+            <!-- You may run this if there are no models running -->
         - `rasa shell -p 5006`
     2. OR Improve model through an interactive session with the following steps:
         - `rasa run actions`
+            <!-- You may run this if there are no models running -->
         - `rasa interactive -p 5006`
 
     Must have actions server running when doing any interactive/shell work.
