@@ -19,3 +19,7 @@ version: "3.1"
   - slot_was_set:
     - generated_response: "Intent: zowe_documentation\nUser Input: How can I use Zowe CLI to list data sets\nproduct Info: \nProduct Name: Zowe\nDescription:\nZowe is a simple, easy to use, and very easy-to-use tool for creating and managing mainframe data. ZOWE is a free, open source, distributed, non-profit, community-based, data management"
   - action: utter_generate_response
+
+- story: interactive_story_1
+  steps:
+  - intent: zowe_documentation

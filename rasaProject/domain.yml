@@ -21,9 +21,11 @@ slots:
     type: text
     influence_conversation: false
     mappings:
-      - type: custom
+    - type: custom
   generated_response:
     type: text
+    mappings:
+    - type: custom
 responses:
   utter_generate_response:
   - text: '{generated_response}'
