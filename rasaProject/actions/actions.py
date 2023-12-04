@@ -4,7 +4,10 @@ from transformers import GPT2LMHeadModel, GPT2Tokenizer
 from .crawler import scrape_website
 import json
 
-json_file_path = 'C:/Users/at895452/Desktop/innovation/rasaProject/data/parsed_data.json'
+import os
+cwd = os.getcwd()
+
+json_file_path = cwd + '/data/parsed_data.json'
 
 # Load the JSON data
 with open(json_file_path, 'r') as file:

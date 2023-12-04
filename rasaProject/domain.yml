@@ -23,6 +23,8 @@ slots:
     mappings:
       - type: custom
   generated_response:
+    mappings:
+      - type: custom
     type: text
 responses:
   utter_generate_response:
